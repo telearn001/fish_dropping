@@ -1,4 +1,5 @@
 info.onScore(30, function () {
+    game.setGameOverEffect(true, effects.confetti)
     game.gameOver(true)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
